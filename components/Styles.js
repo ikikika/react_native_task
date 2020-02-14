@@ -7,18 +7,19 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     justifyContent: 'space-around',
-    alignItems: 'center',
+    alignItems: 'flex-end',
+    position: 'absolute',
+    zIndex: 1000,
   },
-  contentContainer: {flex: 5},
   headerContainer: {
-    flex: 1,
+    position: 'relative',
     flexDirection: 'row-reverse',
     alignItems: 'center',
+    alignSelf: 'flex-end',
   },
   bodyTextContainer: {
     flex: 1,
     padding: 20,
-    // borderBottom: 1,
   },
   bodyMapContainer: {flex: 1, padding: 20},
 
@@ -33,9 +34,9 @@ const styles = StyleSheet.create({
   textTitle: {fontSize: 30},
   applyShadow: {
     shadowColor: '#000',
-    shadowOffset: {width: 50, height: 50},
-    // shadowOpacity: 0.8,
-    shadowRadius: 10,
+    shadowOffset: {width: 1, height: 1},
+    shadowOpacity: 0.8,
+    shadowRadius: 5,
   },
 });
 
