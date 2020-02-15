@@ -86,9 +86,9 @@ const LeftNavBar = () => {
     top: offsetTop,
   };
   const config = {
-    velocityThreshold: 0.3,
+    velocityThreshold: 0.1,
     directionalOffsetThreshold: 80,
-    gestureIsClickThreshold: 10,
+    gestureIsClickThreshold: 5,
   };
 
   return (
